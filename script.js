@@ -1,0 +1,4 @@
+// JavaScript code
+document.querySelector('.button').addEventListener('click', function() {
+    alert('Button clicked!');
+});
