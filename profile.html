@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Page</title>
+    <style>
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-30px); }
+            60% { transform: translateY(-15px); }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f3f3;
+        }
+        .profile-card {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease;
+        }
+        .profile-card:hover {
+            transform: scale(1.05);
+        }
+        .profile-pic {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation: bounce 2s ease;
+        }
+        .profile-name {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .profile-info {
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img class="profile-pic" src="profile-picture.jpg" alt="Profile Picture">
+        <div class="profile-name">Brilian Vincenza Yudha</div>
+        <div class="profile-info">
+            <p><strong>Group Name:</strong> Deep Sea Diver</p>
+            <p><strong>Class:</strong> L4CC</p>
+            <p><strong>Student ID:</strong> 2440123522</p>
+            <p><strong>Email:</strong> brilian.yudha@binus.ac.id</p>
+            <p><strong>About Me:</strong> Hello I am a student</p>
+            <p><strong>Projects:</strong> Fruit recognition, calculator scanner, social application</p>
+            <p><strong>Programming Experience:</strong> 2-3 years from binus</p>
+        </div>
+    </div>
+</body>
+</html>
